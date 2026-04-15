@@ -631,7 +631,7 @@ namespace MobileShopManagement
             Console.WriteLine("  ║               MobileZone Pro — Sales Receipt                   ║");
             Console.WriteLine("  ╚══════════════════════════════════════════════════════════════════╝");
             UI.ResetColor();
-            Console.WriteLine($"  Invoice #: INV-{sale.Id:D4}          Date: {sale.Date:dd-MM-yyyy HH:mm}");
+            Console.WriteLine($"  Invoice #: INV-{sale.Id:D4}          Date: {sale.Date:dd-MM-yyyy hh:mm}");
             Console.WriteLine($"  Customer : {sale.Customer.Name}          Phone: {sale.Customer.Phone}");
             Console.WriteLine($"  Payment  : {sale.PayMethod}                  Status: {(sale.Paid ? "PAID" : "PENDING")}");
             UI.SectionLine("Items");
